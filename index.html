@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Players</title>
+	<style type="text/css">
+		tr{
+			height:25px;
+			color: #gray;
+			background-color: lightgray;
+			border: 1px solid #ccc;
+		}
+		button{
+			border-radius:5px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="titlePage">Basketball Players</h1>
+	<div>
+		<button onclick="getData()">Get Players</button>
+		<button onclick="window.location.href ='addPlayer.html'">Add Player</button>
+	</div>
+	<div>	
+		<input type="text" id="search">
+		<select name="select" id="select">
+		  <option value="first_name">Name</option> 
+		  <option value="division" selected>Division</option>
+		  <option value="position">Position</option>
+		</select>
+		<button onclick="filterPlayers()">Filter Players</button>
+	</div>
+	<div id="divPlayers"></div>
+
+</body>
+</html>
+<script type="text/javascript" src="assets/index.js"></script>
+<script type="text/javascript">
+	getData()
+</script>
